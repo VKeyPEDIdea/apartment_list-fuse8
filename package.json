@@ -1,0 +1,15 @@
+{
+  "name": "apartments_list-fuse8-test_task",
+  "version": "1.0.0",
+  "description": "Test task for fuse8 company to get frontend job",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "task"
+  ],
+  "author": "Karyapkin Pavel",
+  "license": "ISC"
+}
