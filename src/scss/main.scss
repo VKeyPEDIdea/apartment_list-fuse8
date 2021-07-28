@@ -1,0 +1,31 @@
+@import './reset.scss';
+@import './vars.scss';
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: $color-body;
+	font-size: 15px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	color: $color-text-on-body;
+
+	input, textarea {
+		border: $color-grey-85 1px solid;
+		outline: none;
+
+		&:focus:required:invalid {
+			border-color: red;
+		}
+
+		&:required:valid {
+			border-color: green;
+			box-sizing: border-box;
+		}
+	}
+}

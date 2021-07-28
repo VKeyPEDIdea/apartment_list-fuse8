@@ -1,4 +1,6 @@
-import './module';
 import './scss/index.scss';
 
-console.log('start');
+const root = document.getElementById('app');
+const heading = document.createElement('h1');
+heading.textContent = 'Our Latest Developments';
+root.appendChild(heading);
