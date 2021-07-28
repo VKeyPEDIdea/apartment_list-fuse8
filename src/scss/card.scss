@@ -5,6 +5,21 @@
 	border: 1px solid $color-grey-85;
 	color: $color-text-on-body;
 	text-decoration: none;
+
+	&__img {
+		max-width: 100%;
+		height: 240px;
+		max-height: 240px;
+		background-size: cover;
+		background-position: 50%;
+		position: relative;
+	}
+
+	&__type {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
 	
 	&-info {
 		padding: 16px 20px;

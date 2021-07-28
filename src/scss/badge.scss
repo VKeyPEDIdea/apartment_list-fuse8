@@ -1,0 +1,17 @@
+.badge {
+	color: $color-body;
+	padding: 8px 10px 6px;
+	background-color: $color-grey-85;
+
+	&--orange {
+		background-color: $color-epicurean-orange;
+	}
+
+	&--night {
+		background-color: $color-carnival-night;
+	}
+
+	&--grey {
+		background-color: $color-text-on-body;
+	}
+}
