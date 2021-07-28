@@ -1,8 +1,11 @@
 const Header = config => {
 	const { title } = config;
-	const heading = document.createElement('h1');
-	heading.textContent = title;
-	return heading;
+	const header = document.createElement('header');
+	header.classList.add('header');
+	header.innerHTML = `
+		<h1 class="header__title">${title}</h1>
+	`;
+	return header;
 };
 
 export default Header;

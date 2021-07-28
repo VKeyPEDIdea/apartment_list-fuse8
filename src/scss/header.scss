@@ -1,0 +1,14 @@
+@import './vars.scss';
+
+.header {
+	padding: 36px 0;
+	text-align: center;
+	margin-bottom: 8px;
+
+	&__title {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 49px;
+		color: $color-green;
+	}
+}

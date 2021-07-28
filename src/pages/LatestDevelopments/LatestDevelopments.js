@@ -7,6 +7,7 @@ function LatestDevelopments() {
 		() => Header({ title: 'Our Latest Developments' }),
 		ApartmentsList
 	]);
+
 	return page;
 }
 

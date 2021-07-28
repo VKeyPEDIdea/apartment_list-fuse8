@@ -13,6 +13,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
 	color: $color-text-on-body;
+	box-sizing: border-box;
 
 	input, textarea {
 		border: $color-grey-85 1px solid;
@@ -27,4 +28,9 @@ body {
 			box-sizing: border-box;
 		}
 	}
+}
+
+.container {
+	max-width: 1180px;
+	margin: auto;
 }

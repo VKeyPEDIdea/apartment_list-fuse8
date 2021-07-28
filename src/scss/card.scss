@@ -1,0 +1,41 @@
+@import './vars.scss';
+
+.card {
+	background-color: $color-grey-97;
+	border: 1px solid $color-grey-85;
+	color: $color-text-on-body;
+	text-decoration: none;
+	
+	&-info {
+		padding: 16px 20px;
+
+		&__title {
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 28px;
+			margin-bottom: 2px;
+		}
+
+		&__address {
+			margin-bottom: 15px;
+		}
+
+		&__address, &__price {
+			font-size: 16px;
+			line-height: 22px;
+		}
+
+		&__price {
+			margin-bottom: 7px;
+		}
+
+		&__price-count {
+			font-weight: 700;
+		}
+
+		&__additional {
+			font-size: 14px;
+			line-height: 19px;
+		}
+	}
+}
