@@ -1,9 +1,13 @@
-function LatestDevelopments() {
-	const list = document.createElement('div');
-	list.classList.add('list');
-	list.textContent = 'Apartments list';
+import render from '@core/render';
+import ApartmentsList from '../../components/ApartmentsList';
+import Header from '../../components/Header';
 
-	return list;
+function LatestDevelopments() {
+	const page = render([
+		() => Header({ title: 'Our Latest Developments' }),
+		ApartmentsList
+	]);
+	return page;
 }
 
 export default LatestDevelopments;
