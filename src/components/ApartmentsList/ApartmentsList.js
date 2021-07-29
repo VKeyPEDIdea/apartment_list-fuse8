@@ -1,7 +1,7 @@
 import { homesStore } from '../../store/homes.store';
 import Card from '../Card';
 
-const ApartmentsList = () => {
+const ApartmentsList = query => {
 	const response = homesStore.getHomesList();
 
 	const section = document.createElement('section');
@@ -11,7 +11,10 @@ const ApartmentsList = () => {
 	list.classList.add('apartments');
 	
 	response.then(res => {
-		res.map(data => {
+		res.filter(({ title }) => {
+			const modifiedTitle = title.toLowerCase();
+			return modifiedTitle.includes(query);
+		}).map(data => {
 			const card = Card(data);
 			list.appendChild(card);
 		});

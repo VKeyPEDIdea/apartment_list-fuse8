@@ -9,8 +9,6 @@ const Card = config => {
 		id,
 	} = config;
 
-	console.log(config);
-
 	const card = document.createElement('a');
 	card.href = `/details/${id}`;
 	card.classList.add('card');
