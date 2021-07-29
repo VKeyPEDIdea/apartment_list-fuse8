@@ -2,7 +2,6 @@ import render from '@core/render';
 import ApartmentsList from '../../components/ApartmentsList';
 import Header from '../../components/Header';
 import InputText from '../../components/InputText';
-import Button from '../../components/Button';
 
 function LatestDevelopments() {
 	let changed = false;
@@ -33,7 +32,6 @@ function LatestDevelopments() {
 		() => Header({ title: 'Our Latest Developments' }),
 		() => InputText({ title: 'Filter' }, filterHandler),
 		() => ApartmentsList(''),
-		() => Button({ title: 'See more ›'})
 	]);
 
 	return page;
