@@ -4,3 +4,15 @@
 	row-gap: 38px;
 	column-gap: 22px;
 }
+
+@media ( max-width: 960px ) {
+	.apartments {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media ( max-width: 576px ) {
+	.apartments {
+		grid-template-columns: auto;
+	}
+}
