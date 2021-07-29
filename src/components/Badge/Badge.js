@@ -6,11 +6,13 @@ const Badge = type => {;
 	switch(type) {
 		case 'IndependentLiving':
 			badge.classList.add('badge--night');
+			break;
 		case 'SupportAvailable':
 			badge.classList.add('badge--orange');
+			break;
 		default:
 			badge.classList.add('badge--grey');
-
+			break;
 	}
 	return badge;
 };
