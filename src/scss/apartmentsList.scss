@@ -5,6 +5,10 @@
 	column-gap: 22px;
 }
 
+.apartment-section {
+	margin: 45px 0 60px;
+}
+
 @media ( max-width: 960px ) {
 	.apartments {
 		grid-template-columns: repeat(2, 1fr);
