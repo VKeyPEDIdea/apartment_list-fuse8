@@ -2,23 +2,25 @@ import render from '@core/render';
 import ApartmentsList from '../../components/ApartmentsList';
 import Header from '../../components/Header';
 import InputText from '../../components/InputText';
+import Button from '../../components/Button';
 
 function LatestDevelopments() {
 	let changed = false;
 
 	const filterHandler = e => {
-		const query = e.target.value;
-		const root = document.getElementById('app');
-		const section = document.querySelector('.apartment-section');
+		const query = e.target.value.toLowerCase();
 		
 		if (query.length > 3) {
+			const root = document.getElementById('app');
+			const section = document.querySelector('.apartment-section');
 			root.removeChild(section);
 			
-			const modifiedQuery = query.toLowerCase();
-			const newList = ApartmentsList(modifiedQuery);
+			const newList = ApartmentsList(query);
 			root.appendChild(newList);
 			changed = true;
-		} else if (query.length < 3 && changed) {
+		} else if (query.length < 4 && changed) {
+			const root = document.getElementById('app');
+			const section = document.querySelector('.apartment-section');
 			root.removeChild(section);
 			
 			const newList = ApartmentsList('');
@@ -30,7 +32,8 @@ function LatestDevelopments() {
 	const page = render([
 		() => Header({ title: 'Our Latest Developments' }),
 		() => InputText({ title: 'Filter' }, filterHandler),
-		() => ApartmentsList('')
+		() => ApartmentsList(''),
+		() => Button({ title: 'See more ›'})
 	]);
 
 	return page;
